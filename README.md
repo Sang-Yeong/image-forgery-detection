@@ -1,5 +1,6 @@
 # Image forgery detection
 
+## Research Keyword
 > Watch your Up-Convolution: CNN Based Generative Deep Neural Networks are Failing to Reproduce Spectral Distributions (CVPR 2020)
 > https://openaccess.thecvf.com/content_CVPR_2020/html/Durall_Watch_Your_Up-Convolution_CNN_Based_Generative_Deep_Neural_Networks_Are_CVPR_2020_paper.html
 
@@ -15,26 +16,43 @@
 
 <img src='./git_assets/watch_your_up_conv.JPG' width=700>
 
-
 - Keyword
 	1. Sampling method
 	2. Frequency domain
 	3. Fourier Transform
 	4. Azimuth Integral
 
----
 
+## Research Topic
+#### hand crafted method
+[hand crafted method 논문 정리](https://github.com/Sang-Yeong/Research/blob/master/hand_crafted_image_forgery_detction.pdf)
 
-> Exposing digital forgeries by detecting traces of resampling
+> Exposing digital forgeries by detecting traces of resampling(IEEE Transactions on Signal Processing 2005)
 > https://ieeexplore.ieee.org/document/1381775
 
 - Idea
 	- 이미지 위조 --> 이미지의 기본 통계 변화 분석
-	- interpolated signals & their derivatives ← 감지 가능한 **특정 주기 속성** 존재
+	- 이웃 픽셀과의 상관성을 갖는 주기적 samples를 찾음으로써 detect가능
 
 - Resampling signals
-이웃 픽셀과의 상관성을 갖는 주기적 sample을 찾음으로써 detect 가능
 <img src='./git_assets/resampling_singals.JPG' width=700>
 
 - Resampling Images
 <img src='./git_assets/resampling_images.JPG' width=700>
+
+
+
+---
+
+> Blind Authentication Using Periodic Properties of Interpolation(IEEE Transactions on Information Forensics and Security 2008)
+> https://ieeexplore.ieee.org/document/4540058
+
+- [Blind Authentication Using Periodic Properties of Interpolation 구현](https://github.com/Sang-Yeong/Research/blob/master/mahdian_estimator.ipynb)
+
+- Idea: interpolated signals & their derivatives ← 감지 가능한 **특정 주기 속성** 존재
+- Method
+	1. ROI selection
+	2. Signal derivative computation
+	3. Radon Transformation
+	4. Search for periodicity; autocovariance, fft
+<img src='./git_assets/mahdian_estimator.JPG' width=700>
