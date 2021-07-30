@@ -23,7 +23,7 @@
 	4. Azimuth Integral
 
 
-## Research Topic
+## Related Work
 #### hand crafted method
 [hand crafted method 논문 정리](https://github.com/Sang-Yeong/Research/blob/master/hand_crafted_image_forgery_detction.pdf)
 
@@ -56,3 +56,19 @@
 	3. Radon Transformation
 	4. Search for periodicity; autocovariance, fft
 <img src='./git_assets/mahdian_estimator.JPG' width=700>
+
+
+---
+
+> Effective Estimation of Image Rotation Angle Using Spectral Method (IEEE Signal Processing Letters 2014)
+> https://ieeexplore.ieee.org/document/6805599
+> https://github.com/ChenglongChen/image-rotation-angle-estimation
+
+
+- Idea
+	- 이미지 회전 각도를 추정하는 blind and effective method 제안
+	- 2차 통계의 2차원 스펙트럼을 사용하여 회전된 이미지의 숨겨진 주기성을 활용하여 작동
+
+
+- 연구 실험결과 확인
+<img src='./git_assets/estimate_angle.JPG' width=600>
