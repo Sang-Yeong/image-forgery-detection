@@ -43,6 +43,7 @@
 
 
 ---
+[Mahdian and Saic's method]
 
 > Blind Authentication Using Periodic Properties of Interpolation(IEEE Transactions on Information Forensics and Security 2008)
 > https://ieeexplore.ieee.org/document/4540058
@@ -72,3 +73,24 @@
 
 - 연구 실험결과 확인
 <img src='./git_assets/estimate_angle.JPG' width=600>
+
+
+---
+[Vázquez-Padín et al.'s method]
+> Two-dimensional statistical test for the presence of almost cyclostationarity on images (2010 IEEE International Conference on Image Processing)
+> https://ieeexplore.ieee.org/document/5652513
+
+- scaling
+	- 1.05 ~ 2.25 (0.05차이로 구성)
+	- interpolation filter: Lanczos-3 kernel(truncated sinc)
+	- correct 성공률 측정 기준 
+	- 40개의 이미지로 test → avg
+	- Laplacian operator를 이미지에 적용하고 method 사용
+
+
+- rotation
+	- -89 ~ -1 (2.5차이로 구성)
+	- interpolation filter: bicubic
+	- 성공률 측정 기준
+		- our method
+		- Mahdian and Saic; 해당 스펙트럼 피크의 위치에서만 각도를 결정할 수 있기 때문
