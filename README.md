@@ -83,7 +83,7 @@
 - scaling
 	- 1.05 ~ 2.25 (0.05차이로 구성)
 	- interpolation filter: Lanczos-3 kernel(truncated sinc)
-	- correct 성공률 측정 기준 
+	- correct 성공률 측정 기준
 	- 40개의 이미지로 test → avg
 	- Laplacian operator를 이미지에 적용하고 method 사용
 
@@ -94,3 +94,20 @@
 	- 성공률 측정 기준
 		- our method
 		- Mahdian and Saic; 해당 스펙트럼 피크의 위치에서만 각도를 결정할 수 있기 때문
+
+
+
+
+#### end-to-end model
+[ManTra-net]
+> ManTra-Net: Manipulation Tracing Network for Detection and Localization of Image Forgeries With Anomalous Features
+> https://ieeexplore.ieee.org/document/8953774
+
+<img src='./git_assets/mantra-net.JPG' width=700>
+
+- preprocessing and postprocessing 없이 detection and localization를 모두 수행하는 end-to-end network
+- 385가지 유형의 조작 구별가능
+- **BayarConv2D**
+	> Constrained Convolutional Neural Networks: A New Approach Towards General Purpose Image Manipulation Detection (IEEE Transactions on Information Forensics and Security 2018)
+- **SRMConv2D**
+	> Learning Rich Features for Image Manipulation Detection(CVPR 2018)
